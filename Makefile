@@ -20,7 +20,7 @@ SUBMODULES:=
 OBJECTS:=$(foreach mod,$(APPLICATIONS) $(MODULES) $(SUBMODULES),\
 	$(mod:%=$(LIBDIR)%.o))
 # Executable(s) produced by linking the object files
-EXES:=$(APPLICATIONS:%=%$(EXE_EXT))
+EXES:=$(APPLICATIONS:%=$(BINDIR)%$(EXE_EXT))
 
 # Each test application implements main to test a module
 TEST_APPLICATIONS:=$(MODULES)
