@@ -1,8 +1,4 @@
 #include <iostream>
-#include <limits>
-#include <string>
-
-#include "random.hpp"
 
 int main(int argc, const char *argv[]) {
 	int index = 0;
