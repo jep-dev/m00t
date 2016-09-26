@@ -31,3 +31,5 @@
 # Directories
 bin/*
 test/bin/*
+!*/*.md
+!*/*/*.md
