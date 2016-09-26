@@ -1,5 +1,15 @@
 #include <iostream>
+#include <limits>
+#include <string>
+
+#include "random.hpp"
 
 int main(int argc, const char *argv[]) {
-	std::cout << "Goodnight, moon!" << std::endl;
+	int index = 0;
+	while(*argv) {
+		std::cout << "Argv[" << index << "] = " << *argv << std::endl;
+		index++;
+		argv++;
+	}
+	return 0;
 }
